@@ -1,0 +1,42 @@
+---
+title: "Bayesian"
+author: "Elise Gould"
+date: "13/02/2019"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(readr)
+library(metagear)
+
+savedrecs_search_2019_02_13 <- read_csv("../data/bayesian/savedrecs-search_2019-02-13.csv")
+savedrecs_search_2019_02_13 <-
+  savedrecs_search_2019_02_13 %>% 
+  dplyr::select(AU, TI, SO, PY, DI, AB)
+
+# prime the study-reference dataset
+theRefs <- effort_initialize(savedrecs_search_2019_02_13) 
+# display the new columns added by effort_initialize 
+glimpse(theRefs)
+names(theRefs)
+theRefs <- effort_distribute(theRefs, initialize = FALSE, reviewers = "Elise", effort = 100)
+
+theRefs %>% dplyr::mutate(screen_status = "unscreened") %>% 
+  readr::write_csv(., path = "../data/bayesian/refs.csv",col_names = TRUE)
+
+```
+
+Notes on screening for the refs:
+
+No to these studies:
+
+- studies that argue for accounting for a particular process / sampling design / property of system or phenomena of interest in the model should not be included,
+- UNLESS, the paper investigates how particular modelling choices may influence the results of the model and advocates against or for particular modelling procedures that influence error rates
+- I've included studies that explain best practice or procedure
+- our framework / model / model extension is better than previous iterations
+- Bayesian inference is better than frequentist inference
+- Empirical studies using bayesian modelling were not included, with the same exception as above
+
+The abstract screening results are stored in `refs.csv`.
+The nex step is to obtain the full-texts - can we do programmatically?

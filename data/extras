@@ -1,0 +1,52 @@
+@Article{Westgate2018,
+author = {Westgate, Martin J}, 
+title = {revtools: bibliographic data visualization for evidence synthesis in R}, 
+journal = {}, 
+volume = {}, 
+number = {}, 
+pages = {}, 
+year = {2018}, 
+abstract = {<jats:p>Evidence synthesis (ES) is the process of summarizing scientific information, incorporating a range of methods including systematic reviews, systematic maps, and meta-analyses. ES is critical for translating scientific information into recommendations for management or policy, but is becoming increasingly challenging due to rapid growth in publication of scientific literature. From a computational perspective, the ES process can be viewed as a sequence of operations on bibliographic data, including importing, de-duplicating, and classifying large numbers of articles or reports. These are common tasks in natural language processing and machine learning, yet few software tools are available to help researchers access these techniques for manipulating bibliographic data in a systematic way. Here, I present revtools, an R package for exploratory investigation of bibliographic data during reviews and evidence syntheses. It provides tools for the import and de-duplication of bibliographic data formats, and cluster analysis and visualization of article titles, abstracts and keywords using topics models. The key function of revtools is an interactive viewer window that allows users to view and select and export the articles, terms or topics most relevant to their study. Rather than generating lists of text commonly provided by other article sorting software, revtools displays this content as points in an ordination cloud, allowing rapid, intuitive assessment of patterns within the corpus. These tools will assist users to identify key topics and outlying articles or terms, increasing the navigability and ease of processing of bibliographic datasets.</jats:p}, 
+location = {}, 
+keywords = {}}
+
+
+@Article{Aria:2017ku,
+author = {Aria, Massimo and Cuccurullo, Corrado}, 
+title = {bibliometrix: An R-tool for comprehensive science mapping analysis}, 
+journal = {Journal of Informetrics}, 
+volume = {11}, 
+number = {4}, 
+pages = {959–975}, 
+year = {2017}, 
+abstract = {The use of bibliometrics is gradually extending to all disciplines. It is particularly suitable for science mapping at a time when the emphasis on empirical contributions is producing voluminous, fragmented, and controversial research streams. Science mapping is complex and unwieldly because it is multi-step and frequently requires numerous and diverse soft- ware tools, which are not all necessarily freeware. Although automated workflows that integrate these software tools into an organized data flow are emerging, in this paper we propose a unique open-source tool, designed by the authors, called bibliometrix, for per- forming comprehensive science mapping analysis. bibliometrix supports a recommended workflow to perform bibliometric analyses. As it is programmed in R, the proposed tool is flexible and can be rapidly upgraded and integrated with other statistical R-packages. It is therefore useful in a constantly changing science such as bibliometrics.}, 
+location = {}, 
+keywords = {Bibliometrics; Science mapping; workflow; co-citation; Bibliographic coupling; R package; literature review methodology}}
+
+
+@Article{Laubmeier2018,
+author = {Laubmeier, AN and Wootton, K and Banks, JE and Bommarco, R and Curtsdotter, A and Jonsson, T and Roslin, T and Banks, HT}, 
+title = {From theory to experimental design-Quantifying a trait-based theory of predator-prey dynamics.}, 
+journal = {PLoS One}, 
+volume = {13}, 
+number = {4}, 
+pages = {e0195919}, 
+year = {2018}, 
+abstract = {Successfully applying theoretical models to natural communities and predicting ecosystem behavior under changing conditions is the backbone of predictive ecology. However, the experiments required to test these models are dictated by practical constraints, and models are often opportunistically validated against data for which they were never intended. Alternatively, we can inform and improve experimental design by an in-depth pre-experimental analysis of the model, generating experiments better targeted at testing the validity of a theory. Here, we describe this process for a specific experiment. Starting from food web ecological theory, we formulate a model and design an experiment to optimally test the validity of the theory, supplementing traditional design considerations with model analysis. The experiment itself will be run and described in a separate paper. The theory we test is that trophic population dynamics are dictated by species traits, and we study this in a community of terrestrial arthropods. We depart from the Allometric Trophic Network (ATN) model and hypothesize that including habitat use, in addition to body mass, is necessary to better model trophic interactions. We therefore formulate new terms which account for micro-habitat use as well as intra- and interspecific interference in the ATN model. We design an experiment and an effective sampling regime to test this model and the underlying assumptions about the traits dominating trophic interactions. We arrive at a detailed sampling protocol to maximize information content in the empirical data obtained from the experiment and, relying on theoretical analysis of the proposed model, explore potential shortcomings of our design. Consequently, since this is a “pre-experimental” exercise aimed at improving the links between hypothesis formulation, model construction, experimental design and data collection, we hasten to publish our findings before analyzing data from the actual experiment, thus setting the stage for strong inference.}, 
+location = {Center for Research in Scientific Computation, North Carolina State University, Raleigh, NC, United States of America. Department of Ecology, Swedish University of Agricultural Sciences, Uppsala, Sweden. Undergraduate Research Opportunities Center, California State University, Monterey Bay, Seaside, CA, United States of America. Department of Ecology, Swedish University of Agricultural Sciences, Uppsala, Sweden. Department of Ecology, Swedish University of Agricultural Sciences, Uppsala, Sweden. Department of Ecology, Swedish University of Agricultural Sciences, Uppsala, Sweden. Department of Ecology, Swedish University of Agricultural Sciences, Uppsala, Sweden. Center for Research in Scientific Computation, North Carolina State University, Raleigh, NC, United States of America.}, 
+keywords = {}}
+
+
+@Article{Thomas2018,
+author = {Thomas, Freya M and Vesk, Peter A and Hauser, Cindy E}, 
+title = {A field ecologist’s adventures in the virtual world: using simulations to design data collection for complex models}, 
+journal = {Ecological Applications}, 
+volume = {}, 
+number = {}, 
+pages = {}, 
+year = {2018}, 
+abstract = {Field data collection can be expensive, time consuming, and difficult; insightful research requires statistical analyses supported by sufficient data. Pilot studies and power analysis provide guidance on sampling design but can be challenging to perform, as ecologists increasingly collect multiple types of data over different scales. Despite a growing simulation literature, it remains unclear how to appropriately design data collection for many complex projects. Approaches that seek to achieve realism in decision‐making contexts, such as …}, 
+location = {}, 
+keywords = {xperimental design; fieldwork; hierarchical models; management strategy evaluation; sampling; simulation; virtual ecology}}
+
+
