@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<storedHU xmlns:aml="http://www.atlasti.com/hu/ns2003" lastSaved="2020-05-29T18:44:59" creator="ATLAS.ti" method="AML (ATLAS Markup Language)" version="7.1.5" mode="complete">
+    <hermUnit name="QRP_lit_review" au="Elise Gould" cDate="2018-11-07T13:51:46" mDate="2018-11-07T13:51:46" lastPD="" prot="private"/>
+    <coAuthors/>
+    <dataSources size="1">
+        <dataSource id="doc_1" loc="" mime="text/pdf" renderer=""/>
+    </dataSources>
+    <primDocs size="1">
+        <primDoc name="Schuwirth_et_al_2019.pdf" id="pd_1_1" loc="doc_1" au="Elise Gould" cDate="2020-05-29T18:07:21" mDate="2020-05-29T18:07:21" qIndex="">
+            <quotations size="6">
+                <q name="The ideal model to support environmental man- agement decisions can be directly linked to management&#8230;" id="q1_1_1" au="Elise Gould" cDate="2020-05-29T18:08:09" mDate="2020-05-29T18:08:09" loc="2:2191:2:2501">
+                    <content size="310">
+                        <p>The ideal model to support environmental man- agement decisions can be directly linked to management objectives, predicts effects of management alternatives without bias, includes adequate precision and a correct estimate of prediction uncertainty, is transferable in space and time, and is easy to understand.</p>
+                    </content>
+                    <comment type="text/html" size="518">
+                        <p>This idea that ideally models should &#8216;predict the effects of management alternatives without bias&#8217; is important. And I think a key argument for preregistration. For yes, while models are certainly tools, they require an objective, systematic and transparent procedure to be followed for their construction, as free as possible from bias. That does not&#160;preclude creativity on the part of the modeller.
+
+Sometimes analysts can be wedded to a particular action, rather than being focussed on meeting a particular outcome.</p>
+                    </comment>
+                </q>
+                <q name="This makes it less likely &#8211; but not impossible &#8211; that model results are biased and produce false pre&#8230;" id="q1_2_2" au="Elise Gould" cDate="2020-05-29T18:14:35" mDate="2020-05-29T18:14:35" loc="2:5978:2:6133">
+                    <content size="155">
+                        <p>This makes it less likely &#8211; but not impossible &#8211; that model results are biased and produce false predictions, or correct predictions for the wrong reasons.</p>
+                    </content>
+                </q>
+                <q name="Actually, the inclusion of input variables can be seen as a formulation of hypotheses, and the selec&#8230;" id="q1_3_3" au="Elise Gould" cDate="2020-05-29T18:25:04" mDate="2020-05-29T18:25:04" loc="2:7001:2:7244">
+                    <content size="243">
+                        <p>Actually, the inclusion of input variables can be seen as a formulation of hypotheses, and the selection procedure as a falsification process. This process has major implications on the outcomes of the model and the conclusions for management.</p>
+                    </content>
+                    <comment type="text/html" size="163">
+                        <p>Exploratory / confirmatory dichotomy in modelling doesn&#8217;t apply to the entire set of modelling practices but depends on where you are in the process of modelling.&#160;</p>
+                    </comment>
+                </q>
+                <q name="In our view, the interaction with the decision makers (Guisan et al., 2013) and/or experts in the fi&#8230;" id="q1_4_4" au="Elise Gould" cDate="2020-05-29T18:26:58" mDate="2020-05-29T18:26:58" loc="5:4702:5:5281">
+                    <content size="579">
+                        <p>In our view, the interaction with the decision makers (Guisan et al., 2013) and/or experts in the field is vital to test the plausibility of the models: through repeated iterations testing different management strategies &#8211; which represent different input variables at different in- tensities implemented at different spatio-temporal scales &#8211; the perfor- mance and realism of ecological models and their outcomes can be improved. Such trial and error exercises are actually one of the ad- vantages of ecological models, as in silico hypothesis testing can save resources and time.</p>
+                    </content>
+                </q>
+                <q name="in silico hypothesis testing" id="q1_5_5" au="Elise Gould" cDate="2020-05-29T18:27:28" mDate="2020-05-29T18:27:28" loc="5:5224:5:5252">
+                    <content size="28">
+                        <p>in silico hypothesis testing</p>
+                    </content>
+                </q>
+                <q name="In the absence of adequate data/knowledge to generate models that have a satisfying predictive perfo&#8230;" id="q1_6_6" au="Elise Gould" cDate="2020-05-29T18:28:53" mDate="2020-05-29T18:28:53" loc="8:2320:8:2796">
+                    <content size="476">
+                        <p>In the absence of adequate data/knowledge to generate models that have a satisfying predictive performance, environmental managers and decision makers often have concerns regarding the robustness of model outputs and do not take model predictions (under different scenario assumptions) into consideration. This calls modelers to scrutinize the mechanisms and/or acquire better data to improve the model and to assess practical implications of model results on decision making.</p>
+                    </content>
+                </q>
+            </quotations>
+        </primDoc>
+    </primDocs>
+    <codes size="7">
+        <code name="Effects of QRPs on models" id="co_1" au="Elise Gould" cDate="2020-05-29T18:14:35" mDate="2020-05-29T18:14:35" color="" guid="BD413665-A713-423F-B5CD-026812A0E6C4" cCount="0" qCount="1"/>
+        <code name="in silico hypothesis testing" id="co_2" au="Elise Gould" cDate="2020-05-29T18:27:28" mDate="2020-05-29T18:27:28" color="" guid="567700CC-9137-4AFC-B814-F616DE9C9E29" cCount="0" qCount="1"/>
+        <code name="iterative model development" id="co_3" au="Elise Gould" cDate="2020-05-29T18:27:09" mDate="2020-05-29T18:27:09" color="" guid="38838883-5054-4228-A3E3-815AFCB061DC" cCount="0" qCount="1"/>
+        <code name="model development cycle" id="co_4" au="Elise Gould" cDate="2020-05-29T18:28:53" mDate="2020-05-29T18:28:53" color="" guid="E5ABA595-EF8F-4E47-9F48-2D49E81572BA" cCount="0" qCount="1"/>
+        <code name="modes of reasoning" id="co_5" au="Elise Gould" cDate="2020-05-29T18:25:04" mDate="2020-05-29T18:25:04" color="" guid="DD258C45-96CB-4B29-B8C9-512B2136CDA8" cCount="0" qCount="1"/>
+        <code name="role of managers in modelling" id="co_6" au="Elise Gould" cDate="2020-05-29T18:29:14" mDate="2020-05-29T18:29:14" color="" guid="4CF2C38F-8826-4020-8FDA-E55FE85F60ED" cCount="0" qCount="1"/>
+        <code name="source of bias" id="co_7" au="Elise Gould" cDate="2020-05-29T18:08:09" mDate="2020-05-29T18:08:09" color="" guid="49CAC8DB-586C-4FD9-9910-35E6F35438A9" cCount="0" qCount="1">
+            <comment type="text/html" size="123">
+                <p>Source of bias that can interfere in the modelling process.
+
+They are causes or mechanisms of QRP&#8217;s, e.g. publication bais.</p>
+            </comment>
+        </code>
+    </codes>
+    <superCodes size="0"/>
+    <memos size="0"/>
+    <families>
+        <codeFamilies size="0"/>
+        <superCodeFamilies size="0"/>
+        <memoFamilies size="0"/>
+        <superMemoFamilies size="0"/>
+        <primDocFamilies size="0"/>
+        <superPrimDocFamilies size="0"/>
+    </families>
+    <netViews size="0"/>
+    <networkFamilies size="0"/>
+    <superNetworkFamilies size="0"/>
+    <links>
+        <objectSegmentLinks>
+            <codings size="7">
+                <iLink obj="co_1" qRef="q1_2_2"/>
+                <iLink obj="co_2" qRef="q1_5_5"/>
+                <iLink obj="co_3" qRef="q1_4_4"/>
+                <iLink obj="co_4" qRef="q1_6_6"/>
+                <iLink obj="co_5" qRef="q1_3_3"/>
+                <iLink obj="co_6" qRef="q1_6_6"/>
+                <iLink obj="co_7" qRef="q1_1_1"/>
+            </codings>
+            <memoings size="0"/>
+        </objectSegmentLinks>
+        <codeLinkProtos size="7">
+            <codeLinkProto id="CONTRADICTS" label1="&lt;&gt;" label2="A" formalProp="symmetric" layout="U" descr="contradicts" au="ATLAS.ti"/>
+            <codeLinkProto id="IS A" label1="isa" label2="O" formalProp="transitive" layout="U" descr="is a" au="ATLAS.ti"/>
+            <codeLinkProto id="IS ASSOCIATED WITH" label1="==" label2="R" formalProp="symmetric" layout="U" descr="is associated with" au="ATLAS.ti"/>
+            <codeLinkProto id="IS CAUSE OF" label1="=&gt;" label2="N" formalProp="transitive" layout="U" descr="is cause of" au="ATLAS.ti"/>
+            <codeLinkProto id="IS PART OF" label1="[]" label2="G" formalProp="transitive" layout="U" descr="is part of" au="ATLAS.ti"/>
+            <codeLinkProto id="IS PROPERTY OF" label1="*}" label2="P" formalProp="asymmetric" layout="U" descr="is property of" au="ATLAS.ti"/>
+            <codeLinkProto id="NONAME" label1="" label2="" formalProp="symmetric" layout="U" descr="noname" au="ATLAS.ti"/>
+        </codeLinkProtos>
+        <codeLinks size="0"/>
+        <hyperLinkProtos size="8">
+            <hyperLinkProto id="CONTINUED BY" label1="&gt;&gt;&gt;&gt;" label2="cont" formalProp="asymmetric" layout="U" descr="continued by" au="ATLAS.ti"/>
+            <hyperLinkProto id="CONTRADICTS" label1="X&gt;" label2="CO" formalProp="transitive" layout="U" descr="contradicts" au="ATLAS.ti"/>
+            <hyperLinkProto id="CRITICIZES" label1="-&gt;|" label2="crit" formalProp="asymmetric" layout="U" descr="criticizes" au="ATLAS.ti"/>
+            <hyperLinkProto id="DISCUSSES" label1=":&gt;" label2="disc" formalProp="transitive" layout="U" descr="discusses" au="ATLAS.ti"/>
+            <hyperLinkProto id="EXPANDS" label1="?" label2="??" formalProp="transitive" layout="U" descr="expands" au="ATLAS.ti"/>
+            <hyperLinkProto id="EXPLAINS" label1="?&gt;" label2="expl" formalProp="transitive" layout="U" descr="explains" au="ATLAS.ti"/>
+            <hyperLinkProto id="JUSTIFIES" label1="!&gt;" label2="just" formalProp="transitive" layout="U" descr="justifies" au="ATLAS.ti"/>
+            <hyperLinkProto id="SUPPORTS" label1="*&gt;" label2="supp" formalProp="transitive" layout="U" descr="supports" au="ATLAS.ti"/>
+        </hyperLinkProtos>
+        <hyperLinks size="0"/>
+        <memoMemoLinks size="0"/>
+        <memoCodeLinks size="0"/>
+    </links>
+</storedHU>
