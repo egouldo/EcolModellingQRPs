@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<storedHU xmlns:aml="http://www.atlasti.com/hu/ns2003" lastSaved="2020-05-29T17:46:47" creator="ATLAS.ti" method="AML (ATLAS Markup Language)" version="7.1.5" mode="complete">
+    <hermUnit name="QRP_atlas_database" au="egould" cDate="2020-05-26T20:34:05" mDate="2020-05-29T17:45:01" lastPD="" prot="private"/>
+    <coAuthors/>
+    <dataSources size="1">
+        <dataSource id="doc_1" loc="" mime="text/pdf" renderer=""/>
+    </dataSources>
+    <primDocs size="1">
+        <primDoc name="Schuwirth_et_al_2019.pdf" id="pd_1_1" loc="doc_1" au="egould" cDate="2020-05-29T17:35:44" mDate="2020-05-29T17:35:44" qIndex="">
+            <comment type="text/html" size="267">
+                <p>Schuwirth, N., Borgwardt, F., Domisch, S., Friedrichs, M., Kattwinkel, M., Kneis, D.,&#160;.&#160;.&#160;.&#160;Vermeiren, P. (2019). How to make ecological models useful for environmental management. Ecological Modelling, 411, 108784. doi:https://doi.org/10.1016/j.ecolmodel.2019.108784</p>
+            </comment>
+            <quotations size="1">
+                <q name="However, there is a danger of developing models based on easily available data as input variables (a&#8230;" id="q1_1_1" au="egould" cDate="2020-05-29T17:37:59" mDate="2020-05-29T17:37:59" loc="2:4906:2:5515">
+                    <content size="609">
+                        <p>However, there is a danger of developing models based on easily available data as input variables (also called predictor, explanatory, or independent variables) that are somehow correlated with the model output variables (i.e. response or dependent variables) but without explicit consideration of cause-effect mechan- isms. The use of biased input data can lead to biased results. If input variables do not present mechanistically linked attributes of the system, they may have limited practical value for environmental management or even produce false predictions based on spurious correlations in the data.</p>
+                    </content>
+                    <comment type="text/html" size="118">
+                        <p>QRP for ML in particular, but relevant to any approach really. Reminds me of the paper going through SDM bad practice.</p>
+                    </comment>
+                </q>
+            </quotations>
+        </primDoc>
+    </primDocs>
+    <codes size="37">
+        <code name="1-problem_formulation" id="co_1" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="0997CD93-D523-472F-B462-23DB6A9D979F" cCount="0" qCount="0">
+            <comment type="text/html" size="373">
+                <p>Problem Formulation - specifies the decision-making context in which the model will be used, the clients driving model development or stakeholders addressed by the model. It also includes specification of model outputs, statements of the domain of applicability of the model, as well as the extent by which model outputs may be acceptably extrapolated (Grimm et al. 2014).
+</p>
+            </comment>
+        </code>
+        <code name="1.1-problem_formulation: define model purpose" id="co_2" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="B2C01181-4935-42F6-987F-D50955A4D2E6" cCount="0" qCount="0">
+            <comment type="text/html" size="504">
+                <p>Defining the purpose of the model is critical because the model purpose influences choices at later stages of model development [@Jakeman:2006ii]. Common model purposes in ecology include: gaining a better qualitative understanding of the target system, knowledge synthesis and review, and providing guidance for management and decision-making [@Jakeman:2006ii] (could also see Addison paper on the use of models). Note that modelling objectives are distinct from the analytical objectives of the model.
+</p>
+            </comment>
+        </code>
+        <code name="1.2-problem_formulation: specify modelling context" id="co_3" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="AA3A1616-550A-47CD-B7BA-F28E79509B1E" cCount="0" qCount="0">
+            <comment type="text/html" size="282">
+                <p>The scope of the model, including temporal and spatial resolutions are defined here [@Mahmoud2009], and any limitations on model development analysis and flexibility should be outlined here [@Jakeman:2006ii].&#160; &#160;Note that the modelling context is different from the problem context.
+</p>
+            </comment>
+        </code>
+        <code name="1.3.1-problem_formulation: explain analytical objectives" id="co_4" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="62C9E1F1-3157-4758-8432-ED4244694430" cCount="0" qCount="0">
+            <comment type="text/html" size="468">
+                <p>How will the model be analysed, what analytical questions will the model be used to answer? Examples from ecological decision-making include: To compare the performance of alternative management actions under budget constraint [@Fraser:2017jf]. To search for &#8216;robust&#8217; decisions under model uncertainty [@McDonald-Madden2008]. To choose the conservation policy that minimises uncertainty [insert ref]. See other examples in Moallemi et al. 2019 &amp; ask Libby and others.
+</p>
+            </comment>
+        </code>
+        <code name="1.4-problem_formulation: define candidate actions decisions" id="co_5" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="D8A8E5C3-9213-4AFF-9243-E6639AD8267F" cCount="0" qCount="0">
+            <comment type="text/html" size="255">
+                <p>Candidate decisions should be investigated and are specified a priori. Depending on the modelling context, they may be specified by stakeholders, model users or the analyst[@Moallemi2019].&#160;Describe the method used to identify relevant management actions.
+</p>
+            </comment>
+        </code>
+        <code name="1.5-problem_formulation: specify scenarios" id="co_6" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="CBE1E727-19CE-4220-9794-08482EA65DA0" cCount="0" qCount="0">
+            <comment type="text/html" size="377">
+                <p>Describe what processes you will use to elicit and identify relevant scenarios, e.g. literature review, structured workshops with stakeholders or decision-makers. Specify scenarios under which decisions are investigated. Scenarios should be set a priori (i.e. before the model is built, [@Moallemi2019]) and may be stakeholder-defined or expert judgment-driven [@Mahmoud2009].
+</p>
+            </comment>
+        </code>
+        <code name="2.0-define_conceptual_model" id="co_7" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="E2811FE6-E76A-422E-9878-0DA02A35E435" cCount="0" qCount="0">
+            <comment type="text/html" size="639">
+                <p>Define Conceptual Model - conceptual models underpin the formal or quantitative model (Cartwright et al. 2016). The conceptual model describes the biological mechanisms relevant to the ecological problem and should capture basic premises about how the target system works, including any prior knowledge and assumptions about system processes. Conceptual models may be representeed in a variety of formats, such as influence diagrams, linguistic model block diagram or bond graphs, and these illustrate how model drivers are linked to both outputs or observed responses, and internal (state) variables (Jakeman, Letcher, and Norton, 2006).
+</p>
+            </comment>
+        </code>
+        <code name="2.1-define_conceptual_model: choose elicitation and representation method" id="co_8" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="FF8EA3F2-7C46-4E32-8C0C-4440313563F3" cCount="0" qCount="0">
+            <comment type="text/html" size="627">
+                <p>Describe what method you will use to elicit or identify the conceptual model. Some common methods include interviews, drawings, and mapping techniques including influence diagrams, cognitive maps and Bayesian belief networks (Moon et al. 2019). (Libby, to provide link to any structured expert elicitation methods).While itt is difficult to decide and justify which method is most appropriate, however Moon et al. (2019) provide guidance addressing this methodological question. Finally, how do you intend on representing the final conceptual model?&#160;This will likely depend on the method chosen to elicit the conceptual model.
+</p>
+            </comment>
+        </code>
+        <code name="2.2:define_conceptual_model: specify key assumptions uncertainties" id="co_9" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="BB542A48-D3CA-42A6-9C19-857F1063961F" cCount="0" qCount="0">
+            <comment type="text/html" size="861">
+                <p>This step should list and explain the critical conceptual design decisions, including: &#8220;spatial and temporal scales, selection of entities and processes, representation of stochasticity and heterogeneity, consideration of local versus global interactions, environmental drivers, etc.&#8221; [@Grimm:2014es].&#160;The influence of particular theories, concepts, or importantly, earlier models, should be explained and justified against alternative conceptual design decisions that might lead to alternative model structures [@Grimm:2014es].Specify key assumptions and uncertainties underlying the model&#8217;s design. Describe how uncertainty and variation will be represented in this model. This includes both exogenous uncertainties affecting the system, parametric uncertainty in input data and structural / conceptual nonparametric uncertainty in the model [@Moallemi2019].
+</p>
+            </comment>
+        </code>
+        <code name="2.3-define_conceptual_model: identify predictor response variables" id="co_10" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="A16D8ABB-2668-481E-9260-0CBA31D2D4FD" cCount="0" qCount="0">
+            <comment type="text/html" size="522">
+                <p>Identify and define system variables structures).: i) What variables will support this decision or action (things we can control). ii) What additional variables may interact with this system (things we can&#8217;t control, but can hopefully measure). iii) In what ways do we expect these variables to interact (model structures). The identification and definition of primary model input variables should be driven by scenario definitions, and by the scope of the model described in the problem formulation phase&#160;[@Mahmoud2009].
+</p>
+            </comment>
+        </code>
+        <code name="2.4-define_conceptual_model: prior knowledge data specification and evaluation" id="co_11" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="B091F14D-3EFC-4572-B931-451C7FD3C82A" cCount="0" qCount="1">
+            <comment type="text/html" size="122">
+                <p>Collect, process and prepare data available for parameterisation, determining model structure, and for scenario analysis.
+</p>
+            </comment>
+        </code>
+        <code name="2.5-define_conceptual_model: conceptual model evaluation" id="co_12" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="89BECAC0-4AFE-429B-B9AF-6BE86A932B04" cCount="0" qCount="0">
+            <comment type="text/html" size="323">
+                <p>Describe how the model will be critically evaluated. Evaluation includes both the overall model structure, and any submodels if relevant. How will any simplifying assumptiosn be critically assessed[@Augusiak:2014gz]?&#160;Explain whether this process will include consultation or feedback from a client, manager, or model user.
+</p>
+            </comment>
+        </code>
+        <code name="2.6-define_conceptual_model: iterative link" id="co_13" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="E999ADFC-5148-4E8F-B756-7C8C3C028A86" cCount="0" qCount="0">
+            <comment type="text/html" size="77">
+                <p>Do we need to include any PRT items that speak to expert elicitation or not?
+</p>
+            </comment>
+        </code>
+        <code name="3.0-formalise_specify_model" id="co_14" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="CB18E4E0-CE2B-4676-8439-3C5C05854F6D" cCount="0" qCount="0">
+            <comment type="text/html" size="435">
+                <p>Formalise and Specify Model - Critical decisions are made here about the type of model, modelling framework and approach to be used. The model is formalised into a mathematical / statistical description of the system and respective changes it can experience (Mahmoud et al. 2009). In this section describe what quantitative methods you will use to build the model/s, explain how they are relevant to the client/manager/user&#8217;s purpose.
+</p>
+            </comment>
+        </code>
+        <code name="3.1-formalise_specify_model: choose model class, framework and approach" id="co_15" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="C67A9C0D-3198-4C64-962D-C94BEF5ACF51" cCount="0" qCount="0">
+            <comment type="text/html" size="542">
+                <p>Describe what class or approach of model you will use and&#160;explain how the choice of model class was informed by the analytical objectives of the model. Modelling approaches lie on a spectrum from correlative or phenomenological to mechanistic or process-based&#160; [@Yates2018]; where correlative models use mathematical functions fitted to data to describe underlying processes, and mechanistic models explicitly represent processes and details of component parts of a biological system that are expected to give rise to the data [@White2019a].
+</p>
+            </comment>
+        </code>
+        <code name="3.2-Choose model features and family" id="co_16" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="EA836244-DA85-46FD-BF78-BBD8706AB25F" cCount="0" qCount="0">
+            <comment type="text/html" size="554">
+                <p>All modelling approaches require the selection of model features, which conform with the conceptual model and data specified in previous steps&#160;(Jakeman 2006). The choice of model are determined in conjunction with features are selected.Usually difficult to change fundamental features of a model beyond an early stage of model development, so careful thought and planning here is useful to the modeller (Jakeman, 2006). However, if changes to these fundamental aspects of the model do need to change, please document how and why these choices were made.
+</p>
+            </comment>
+        </code>
+        <code name="3.3-Choose approach for identifying model structure and parameters" id="co_17" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="C65AB494-5668-4510-A52D-3F66D1E9F01B" cCount="0" qCount="0">
+            <comment type="text/html" size="1005">
+                <p>This refers to the iterative process of determining the most efficient or parsimonious representation of the system at the appropriate scale of concern (Jakeman, 2006) that best meets the analytical objectives specified in the problem formulation phase. Approaches to finding model structure and parameters may be knowledge-supported, or data-driven [@Boets:2015gl]. Model selection methods can include traditional inferential approaches such as unconstrained searches of a dataset for patterns that explain variations in the response variable, or use of ensemble-modelling methods (Barnard et al. 2019). Ensemble modelling procedures might aim to derive a single model, or a multi-model average [@Yates2018]. Refining actions to develop a model could include iteratively dropping parameters or adding them, or aggregating / disaggregating system descriptors, such as dimensionality and processes (Jakeman, 2006). Specify what approach and methods you will use to identify model structure and parameters.
+</p>
+            </comment>
+        </code>
+        <code name="3.4-formalise_specify_model: choose estimation technique and performance criteria" id="co_18" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="1761FC08-D322-4051-9D1B-1DC47F3D3C09" cCount="0" qCount="0">
+            <comment type="text/html" size="1313">
+                <p>Before calibrating the model to the data, the performance criteria on which the calibration is judged are chosen. These criteria and their underlying assumptions should reflect the desired properties of the parameter estimates / structure [@Jakeman:2006ii]. For example, modellers might seek that parameter estimates are robust to outliers, unbiased, and yield appropriate predictive performance. Modellers will need to consider whether the assumptions of the estimation technique yielding those desired criteria are appropriate to the problem at hand. For integrated or sub-divided models, other considerations might include choices about where to disaggregate the model for parameter estimation; e.g. spatial sectioning (streams into reaches) and temporal sectioning (piece-wise linear models) [@Jakeman:2006ii].Specifying performance criteria a priori is important because it involves pre-specifying how the fitted or quantitative model will be interpreted in advance, avoiding biases like confirmation bias, HARKing, and cherry-picking some performance tests from the full suite of tests undertaken.This is important - because it involves pre-specifying how&#160;we will interpret the fitted or quantitative model to avoid cognitive biases like confirmation bias, HARKing or other questionable research practices.
+</p>
+            </comment>
+        </code>
+        <code name="3.5-formalise_specify_model: Specify model assumptions and uncertainties" id="co_19" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="77ACAFDF-92FE-496F-A9D3-D0741AA595EC" cCount="0" qCount="0">
+            <comment type="text/html" size="330">
+                <p>Specify all assumptions and key uncertainties in the formal model. Describe what gaps exist between the model conception, and the real-world problem, what biases might this introduce and how might this impact any interpertation of the model outputs, and what implications are there on evaluating model-output to inform decisions?
+</p>
+            </comment>
+        </code>
+        <code name="3.6-formalise_specify_model: specify formal model" id="co_20" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="A571A94C-ADEA-411B-A839-580442BA5685" cCount="0" qCount="0">
+            <comment type="text/html" size="396">
+                <p>Once critical decisions have been made about the approach and method of model specification,&#160;translate the conceptual model into the quantitative model.For data-driven and model-selection approaches that determine model structure and parameters, describe any initial model specifications and parameterisations, including for any tune-in parameters. (Should this go here or in model calibration?)
+</p>
+            </comment>
+        </code>
+        <code name="4.0-model_calibration_fitting_checking" id="co_21" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="2F534A8C-302F-41FE-9D1C-BEB429022202" cCount="0" qCount="0">
+            <comment type="text/html" size="303">
+                <p>Model Calibration, Model Fitting &amp; Checking -&#160;this phase involves fitting the formally defined model to data and checking and testing the fitted model (what should go in thisphase if using a numerical, but not correlative model or how could we change the wording to make this optional if not relevant?)
+</p>
+            </comment>
+        </code>
+        <code name="4.1-model_calibration_fitting_checking: Model calibration and validation scheme" id="co_22" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="4B42301C-C32D-478A-BDF2-CC2E31DDA436" cCount="0" qCount="0">
+            <comment type="text/html" size="1009">
+                <p>Describe the validation scheme you will use for model testing and evaluation.&#160;&#160;Please explain your reasoning for your choice of model calibration and validation scheme. The model may be tested on data independent of those used to parameterise the model (external validation), or the model may be cross-validated on random sub-samples of the data used to parameterise the model (internal cross-validation)  [@Yates2018;[@Barnard2019]. Although using independent data is the gold-standard or idealised practice for model evaluation, Typically testing on independent datasets is not possible for large and/or integrated models, especially when they are being used to generate anticipatory predictions beyond the conditions on which they were calibrated [@Jakeman:2006ii]. Describe and justify the method for your calibration and validation schema, including how many folds and what methods you will use to partition the data set into training/testing data. (What other items, esp. re. partitioning are missing?)
+</p>
+            </comment>
+        </code>
+        <code name="4.2-model_calibration_fitting_checking: Implementation verification" id="co_23" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="94CE1410-A3AE-4E51-A5F7-4E05F6655A6F" cCount="0" qCount="0">
+            <comment type="text/html" size="787">
+                <p>What Quality Assurance measures will you take to verify the modle has been correctly implemented as per the formal model specification ? This could be as simple as an informal &#8216;model walkthrough&#8217; to examine the model&#8217;s behaviour qualitatively, or it could include more sophisticated approaches such as formal unit testing approaches using continuous integration platforms (see [@Yenni2019]). Qualitative tests could include syntax checking of code,&#160;and code reviews by peers. Checks for verification implementation should include i) thoroughy checking for bugs or programming errors, &#160;and ii) whether the implemented model performs as dictated by the model description  [@Grimm:2014es].&#160;Specifying up front QA tests for implementation verification may help to avoid selective debugging.
+</p>
+            </comment>
+        </code>
+        <code name="4.3-model_calibration_fitting_checking: model checking" id="co_24" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="4E3FE2F6-353B-40CC-80E4-B368BB18CC0F" cCount="0" qCount="0">
+            <comment type="text/html" size="816">
+                <p>&#8220;Model Checking&#8221; goes by many names (&#8220;conditional verification&#8221;, &#8220;quantitative verification&#8221;, &#8220;model output verification&#8221; &lt;cite&gt;), but refers to a series of analyses that assess a model&#8217;s performance in representing the system of interest [@Conn:2018hd]. During this process, observed data, or data and patterns that guided model design and calibration is compared to model output in order to identify if and where there are any systematic differences. Model checking therefore heps diagnose assumption violations, and reveals where a model might need to be altered to better represent the data, and therefore system [@Conn:2018hd]. Quantitative model checking diagnostics include goodness of fit, tests on residuals or errors, such as for heteroscedascity, cross-correlation, and autocorrelation [@Jakeman:2006ii].
+</p>
+            </comment>
+        </code>
+        <code name="5.0- Model Validation and Evaluation" id="co_25" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="BCBA552D-2EA5-4FDF-BED0-0D1CCF67CDFF" cCount="0" qCount="0">
+            <comment type="text/html" size="1380">
+                <p>Model Validation &amp; Evaluation - This phase consists of a suite of analyses that collectively inform the decision and whether and when a model is suitable to meet its intended purpose (Augusiak, Van den Brink and Grimm 2014). Errors in design and implementation of the model and their implication on the model output are assessed. Ideally independent data is used against the model outputs to assess whether the model output behaviour exhibits the required accuracy for the model&#8217;s intended purpose. The outcomes of these analyses build confidence in the model applications and increase understandingof model strengths and limitations.Model evaluation including model analysis and other testing should complement model checking. It should evaluate model checking, and consider over-fitting and extrapolation. &#8220;The higher the proportion of calibrated, or uncertain parameters, the greater the risk that the model seems to work correctly [&#8230;] but for the wrong reasons&#8221; Evaluation thus complements model checking because we can rule out the chance that the model fits the calibration data well, but has not captured the relevant ecological mecahnisms of the system (Grimm).Evaluation of model outputs against external data in conjunction with the results from model checking provide information about the structural realism and therefore credibility of the model (Grimm et al. 2014).
+</p>
+            </comment>
+        </code>
+        <code name="5.1- Model Validation and Evaluation: model output corroboration" id="co_26" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="3A947556-013B-4A54-AF42-40C9545FE45A" cCount="0" qCount="0">
+            <comment type="text/html" size="1686">
+                <p>Ideally, model outputs or predictions are compared to independent data and patterns that were not used to develop, parameterise, or verify the model. Testing against a dataset of response and predictor variables that are sptially and/or temporally independent from the training dataset&#160;minimises the risk of artificially inflating model performance measures [@Araujo2019].State whether you will corroborate the model outputs on external data, and please document any independent validation data in step &lt;2.4&gt;.It is preferable that any independent data used for model evaluation remains unknown to modellers during the process of model building, please describe the relationship modllers have to model validation data, will independent datasets be known to any modeller or analyst involved in the model building process?Although the corroboration of model outputs against an independent validation dataset is considered the &#8216;gold standard&#8217; for showing that a model properly represents the internal organisation of the system ), model validation is not always possible because empirical experiments are infeasible or model users are working on rapid-response time-frames &#8212; hence, why ecologists often model in the first place&#160;(Grimm, et al. 2014. Independent predictions can instead be tested on submodels. Alternatively, patterns in model output that are robust and seem characteristic of the system can be identified and evaluated in consultation with the literature or by experts to judge how accurate the model&#8217;s output is (Grimm et al.2014). If unable to evaluate the model outputs against independent data, explain why and explain what steps you will take to interrogate the model.
+</p>
+            </comment>
+        </code>
+        <code name="5.2- Model Validation and Evaluation: choose performance metrics and criteria" id="co_27" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="645A7E0B-F4C1-4D5D-83CC-A0DC79BDAA90" cCount="0" qCount="0">
+            <comment type="text/html" size="1009">
+                <p>Model performance can be quantified by a range of tests, including measures of agreement between predictions and independent observations, or estimates of accuracy, bias, calibration, discrimination refinement, resolution and skill [@Araujo2019]. Specify what performance measures you will use to evaluate the model and briefly explain how each test relates to different desired properties of a model&#8217;s performance.Spatial, temporal and environmental pattern of errors and variance can change the interpretation of model predictions and conservation decisions [@Araujo2019], where relevant and possible, describe how you will characterise and report the spatial, temporal and environmental pattern of errors and variance.If comparing alternative models, specify what measures of model comparison or out-of-sample performance metrics will you use to find support for alternative models or else to optimise predictive ability. State what numerical threshold or qualities you will use for each of these metrics.
+</p>
+            </comment>
+        </code>
+        <code name="5.3- Model Validation and Evaluation: evaluate model assumptions" id="co_28" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="998D58B5-1AAB-448D-8854-6BD64E6D1E5F" cCount="0" qCount="0">
+            <comment type="text/html" size="891">
+                <p>Explain how you will demonstrate a lack of violation of or robustness to model assumptions. If you cannot perform quantitative tests, specify what theoretical justifications would justify a lack of violation of or robustness to model assumptions. If you cannot demonstrate or theoretically justify violation or robustness to assumptions, explain why not, and specify whether you will discuss assumption violations and their consequences for interpretation of model outputs.(Complete in follow-up iterations of the pre-registration, only if there are departures from assumptions as demonstrated in the planned tests above). The consequences of assumption violations on the interpretation of results should be assessed [@Araujo2019]. Specify how you will assess departures from assumptions. If assumption violations cannot be avoided, explain describe how you will explore their consequences.
+</p>
+            </comment>
+        </code>
+        <code name="5.4- Model Validation and Evaluation: model analysis" id="co_29" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="BAAE8DDB-BAA3-4FEF-AFA2-CB0BA9543C36" cCount="0" qCount="0">
+            <comment type="text/html" size="2073">
+                <p>Uncertainty in models arises due to incomplete system understanding (which processes to include, or which interact), from imprecise, finite and sparese data measurements, and from uncertainty in input conditions and scenarios for model simulations or runs [@Jakeman:2006ii]. Non-technical uncertainties can also be introduced throughout the modellign process, such as uncertainties arising from issues in problem-framing, indeterminicies, and modeller / client values [@Jakeman:2006ii].The purpose of model analysis is to prevent blind trust in the model by understanding how model outputs have emerged, and to &#8216;challenge&#8217; the model by verifying whether the model is still believeable and fit for purpose if one or more parameters are changed [@Grimm:2014es]. Model analysis should increase understanding of the model behaviour by identifying which processes and process interactions explain characteristic behaviours of the model system. Model analysis typically consists of sensitivity analyses preceded by uncertainty analyses [@Saltelli2019], and a suite of other simulation or other computational experiments. The aim of such computational experiments is to increase understanding of the model behaviour by identifying which processes and process interactions explain characteristic behaviours of the model system [@Grimm:2014es].Uncertainty analyses and sensitivity analyses augment one another to draw conclusions about model uncertainty &#8212; the overall model will be very uncertain if the parameters that are the most uncertain are the ones the model is most uncertain to., for instance.Because the results from a full suite of sensitivity analysis and uncertainty analysis can be difficult to interpret due to the number and complexity of causal relations examined [@Jakeman:2006ii], it is useful for the analyst to relate the choice of analysis to the modelling context, purpose and analytical objectives defined in the problem formulation phase, in tandem with any critical uncertainties that have emerged during model development and testing prior to this point.
+</p>
+            </comment>
+        </code>
+        <code name="6.0-model_application" id="co_30" au="egould" cDate="2020-05-26T20:37:36" mDate="2020-05-26T20:37:36" color="" guid="63692616-FC74-4F84-94AF-BD87177F4692" cCount="0" qCount="0">
+            <comment type="text/html" size="645">
+                <p>Explain how you will operationalise any scenarios identified during the problem formulation phase, if not already done so.&#160;For example, how will you operationalise any qualitative changes of interest, such as &#8216;deterioration&#8217; or &#8216;improvement&#8217;?Specify any input conditions and relevant parameter values for initial environmental conditions and decision-variables under each scenario. Please describe any other relevant technical details of model application, such as methods for how you will implement any simulations or model projections. Specify what raw and transformed model outputs will you extract from the model simulations or projections.
+</p>
+            </comment>
+        </code>
+        <code name="6.1-Model Application: choose performance criteria for scenario analysis" id="co_31" au="egould" cDate="2020-05-26T20:37:36" mDate="2020-05-26T20:37:36" color="" guid="81835E02-74AB-4C22-965F-8961BFD2F6E0" cCount="0" qCount="0">
+            <comment type="text/html" size="767">
+                <p>Describe how you will evaluate and distinguish the performance of alternative scenario outcomes. These measures should link back to the analytical objectives specified during the problem formulation phase, and might include for example, descriptive statistic measures, such as a model in the top 10th percentile of worst conditions, satisficing measures such as a minimum performance threshold for achieving some management objective, or perhaps regret measures, such as choosing a decision with minimum regret [@Moallemi2019].&#8221;Justify or otherwise explain how you chose these measures, and determined performance criteria in relation to the analytical objectives, modelling context, such as the risk attitudes of decision-makers and stakeholders within this system.
+</p>
+            </comment>
+        </code>
+        <code name="6.2-Model Application: Synthesis of model application results" id="co_32" au="egould" cDate="2020-05-26T20:37:36" mDate="2020-05-26T20:37:36" color="" guid="4FF14470-3E5E-4945-903B-D48F54920F35" cCount="0" qCount="0">
+            <comment type="text/html" size="571">
+                <p>Specify how you will map, plot or otherwise display and synthesise the results of scenario and model analyses. Explain how will they support meaningful analysis and interpretation to aid in answering the analytical objectives and modelling context specified in the problem formulation phase.Explain how you will analyse the model analysis output to answer your analytical objectives. For instance, describe any trade-off or robustness analyses you will undertake to help evaluate and choose between different alternatives in consultation with experts or decision-makers.
+</p>
+            </comment>
+        </code>
+        <code name="6.3-Model Application: Consultation with Experts, Clients, Stakeholders" id="co_33" au="egould" cDate="2020-05-26T20:37:36" mDate="2020-05-26T20:37:36" color="" guid="11E746C7-173F-47F7-94D8-1B44C9313052" cCount="0" qCount="0">
+            <comment type="text/html" size="848">
+                <p>How will you use the results of model application analysis to provide advice. and support to the clients / managers / stakeholders based on these findings?Describe how these results will be characterised and presented to experts, clients and stakeholders once the results from the modelling exercises have been synthesised. What role will these consultations have in determining the selection of management interventions, or future iterations of model development? For example, what key outliers or strongest examples of best or worst case scenarios should be presented to experts or decision-makers?(Do we need an item about how do we interpret the model outputs? Should there be some a priori decisions about how we interpret the model findings, and how does case 49 about the risk attitude inform how the analyst interprets the model findings?)
+</p>
+            </comment>
+        </code>
+        <code name="Code" id="co_34" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" color="" guid="7346FD19-48A6-44E1-888E-3680BBA477CA" cCount="0" qCount="0">
+            <comment type="text/html" size="8">
+                <p>Comment
+</p>
+            </comment>
+        </code>
+        <code name="QRP" id="co_35" au="egould" cDate="2020-05-29T17:38:10" mDate="2020-05-29T17:38:10" color="" guid="CCD628C6-6430-4B99-8672-09A8ED688831" cCount="0" qCount="1"/>
+        <code name="follow up linked reference" id="co_36" au="egould" cDate="2020-05-29T17:39:32" mDate="2020-05-29T17:39:32" color="" guid="0B79FFE2-1A74-45E5-ADD7-28A306E35B91" cCount="0" qCount="1"/>
+        <code name="model dredging" id="co_37" au="egould" cDate="2020-05-29T17:38:30" mDate="2020-05-29T17:38:30" color="" guid="6DE3B082-1446-466F-A764-3A42527E9E99" cCount="0" qCount="1"/>
+    </codes>
+    <superCodes size="0"/>
+    <memos size="0"/>
+    <families>
+        <codeFamilies size="7">
+            <codeFamily name="Code Group 1" id="cf_1" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" guid="1DB89791-7F95-4631-BFD9-CF2AE5A9A170">
+                <item id="co_34"/>
+            </codeFamily>
+            <codeFamily name="Code Group 2" id="cf_2" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" guid="8492AF86-3261-48D7-877A-967586049F4D">
+                <item id="co_34"/>
+            </codeFamily>
+            <codeFamily name="PRT item" id="cf_3" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" guid="C1644D7F-DF06-49A8-A826-00AD62765B11">
+                <item id="co_1"/>
+                <item id="co_2"/>
+                <item id="co_3"/>
+                <item id="co_4"/>
+                <item id="co_5"/>
+                <item id="co_6"/>
+                <item id="co_7"/>
+                <item id="co_8"/>
+                <item id="co_9"/>
+                <item id="co_10"/>
+                <item id="co_11"/>
+                <item id="co_12"/>
+                <item id="co_13"/>
+                <item id="co_14"/>
+                <item id="co_15"/>
+                <item id="co_16"/>
+                <item id="co_17"/>
+                <item id="co_18"/>
+                <item id="co_19"/>
+                <item id="co_20"/>
+                <item id="co_21"/>
+                <item id="co_22"/>
+                <item id="co_23"/>
+                <item id="co_24"/>
+                <item id="co_25"/>
+                <item id="co_26"/>
+                <item id="co_27"/>
+                <item id="co_28"/>
+                <item id="co_29"/>
+                <item id="co_30"/>
+                <item id="co_31"/>
+                <item id="co_32"/>
+                <item id="co_33"/>
+            </codeFamily>
+            <codeFamily name="QRPS" id="cf_4" au="egould" cDate="2020-05-29T17:41:39" mDate="2020-05-29T17:41:54" guid="88D57DC7-DFA4-4241-8F3D-B877B0679F19">
+                <item id="co_35"/>
+                <item id="co_37"/>
+            </codeFamily>
+            <codeFamily name="Task Management" id="cf_5" au="egould" cDate="2020-05-29T17:41:16" mDate="2020-05-29T17:41:31" guid="9406962E-990B-4211-98DD-F3EB1D5CB7D1">
+                <item id="co_36"/>
+            </codeFamily>
+            <codeFamily name="coded_decision_step" id="cf_6" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" guid="B203B18B-772B-475F-8464-F18DDBF2B8FA">
+                <item id="co_2"/>
+                <item id="co_3"/>
+                <item id="co_4"/>
+                <item id="co_5"/>
+                <item id="co_6"/>
+                <item id="co_8"/>
+                <item id="co_9"/>
+                <item id="co_10"/>
+                <item id="co_11"/>
+                <item id="co_12"/>
+                <item id="co_13"/>
+                <item id="co_15"/>
+                <item id="co_17"/>
+                <item id="co_18"/>
+                <item id="co_19"/>
+                <item id="co_20"/>
+                <item id="co_22"/>
+                <item id="co_23"/>
+                <item id="co_24"/>
+                <item id="co_26"/>
+                <item id="co_27"/>
+                <item id="co_28"/>
+                <item id="co_29"/>
+                <item id="co_31"/>
+                <item id="co_32"/>
+                <item id="co_33"/>
+            </codeFamily>
+            <codeFamily name="coded_phase" id="cf_7" au="egould" cDate="2020-05-26T20:37:35" mDate="2020-05-26T20:37:35" guid="54CE1CD2-1A04-44C6-94F2-D513D6784B9C">
+                <item id="co_1"/>
+                <item id="co_7"/>
+                <item id="co_14"/>
+                <item id="co_21"/>
+                <item id="co_25"/>
+                <item id="co_30"/>
+            </codeFamily>
+        </codeFamilies>
+        <superCodeFamilies size="0"/>
+        <memoFamilies size="0"/>
+        <superMemoFamilies size="0"/>
+        <primDocFamilies size="0"/>
+        <superPrimDocFamilies size="0"/>
+    </families>
+    <netViews size="0"/>
+    <networkFamilies size="0"/>
+    <superNetworkFamilies size="0"/>
+    <links>
+        <objectSegmentLinks>
+            <codings size="4">
+                <iLink obj="co_11" qRef="q1_1_1"/>
+                <iLink obj="co_35" qRef="q1_1_1"/>
+                <iLink obj="co_36" qRef="q1_1_1"/>
+                <iLink obj="co_37" qRef="q1_1_1"/>
+            </codings>
+            <memoings size="0"/>
+        </objectSegmentLinks>
+        <codeLinkProtos size="7">
+            <codeLinkProto id="CONTRADICTS" label1="&lt;&gt;" label2="A" formalProp="symmetric" layout="U" descr="contradicts" au="ATLAS.ti"/>
+            <codeLinkProto id="IS A" label1="isa" label2="O" formalProp="transitive" layout="U" descr="is a" au="ATLAS.ti"/>
+            <codeLinkProto id="IS ASSOCIATED WITH" label1="==" label2="R" formalProp="symmetric" layout="U" descr="is associated with" au="ATLAS.ti"/>
+            <codeLinkProto id="IS CAUSE OF" label1="=&gt;" label2="N" formalProp="transitive" layout="U" descr="is cause of" au="ATLAS.ti"/>
+            <codeLinkProto id="IS PART OF" label1="[]" label2="G" formalProp="transitive" layout="U" descr="is part of" au="ATLAS.ti"/>
+            <codeLinkProto id="IS PROPERTY OF" label1="*}" label2="P" formalProp="asymmetric" layout="U" descr="is property of" au="ATLAS.ti"/>
+            <codeLinkProto id="NONAME" label1="" label2="" formalProp="symmetric" layout="U" descr="noname" au="ATLAS.ti"/>
+        </codeLinkProtos>
+        <codeLinks size="0"/>
+        <hyperLinkProtos size="8">
+            <hyperLinkProto id="CONTINUED BY" label1="&gt;&gt;&gt;&gt;" label2="cont" formalProp="asymmetric" layout="U" descr="continued by" au="ATLAS.ti"/>
+            <hyperLinkProto id="CONTRADICTS" label1="X&gt;" label2="CO" formalProp="transitive" layout="U" descr="contradicts" au="ATLAS.ti"/>
+            <hyperLinkProto id="CRITICIZES" label1="-&gt;|" label2="crit" formalProp="asymmetric" layout="U" descr="criticizes" au="ATLAS.ti"/>
+            <hyperLinkProto id="DISCUSSES" label1=":&gt;" label2="disc" formalProp="transitive" layout="U" descr="discusses" au="ATLAS.ti"/>
+            <hyperLinkProto id="EXPANDS" label1="?" label2="??" formalProp="transitive" layout="U" descr="expands" au="ATLAS.ti"/>
+            <hyperLinkProto id="EXPLAINS" label1="?&gt;" label2="expl" formalProp="transitive" layout="U" descr="explains" au="ATLAS.ti"/>
+            <hyperLinkProto id="JUSTIFIES" label1="!&gt;" label2="just" formalProp="transitive" layout="U" descr="justifies" au="ATLAS.ti"/>
+            <hyperLinkProto id="SUPPORTS" label1="*&gt;" label2="supp" formalProp="transitive" layout="U" descr="supports" au="ATLAS.ti"/>
+        </hyperLinkProtos>
+        <hyperLinks size="0"/>
+        <memoMemoLinks size="0"/>
+        <memoCodeLinks size="0"/>
+    </links>
+</storedHU>
